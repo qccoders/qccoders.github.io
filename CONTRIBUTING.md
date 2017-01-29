@@ -22,7 +22,7 @@ These instructions will install Git on your machine. Git is just a version contr
 	<li>Click on the "Fork" button</li>
 		*You now have the repo forked under your own GitHub account.
 	<li>After the repository has been forked, you will be taken to your copy of the Q-C Coders repo at 
-	`<yourUsername>/qc-coders.github.io`</li><br/>
+	`'yourUsername'/qc-coders.github.io`</li><br/>
 </ol>
 
 
@@ -35,9 +35,9 @@ Cloning is simply putting the code that you previously forked (copied to your ow
 <ol>
 	<li>Open Git Bash Shell and navigate to the location you're going to save this project locally.</li>
 		*Make a note of where this location is as you will use it later.
-	<li>Type or copy: `git clone https://github.com/<yourUsername>/qc-coders.github.io.git`</li>
+	<li>Type or copy: `git clone https://github.com/'yourUsername'/qc-coders.github.io.git`</li>
 	<ul>	
-		<li>Make sure to replace `<yourUsername>` with your GitHub Username</li>
+		<li>Make sure to replace `'yourUsername'` with your GitHub Username</li>
 		<li>This will download the entire qc-coders repo to your projects directory.</li><br/>
 	</ul>
 </ol>
@@ -134,10 +134,10 @@ You will now put the code from your local machine back into your local qc-coders
 
 <ol>
 	<li>Add your edited files:
-		Indivudually add files by `git add <path to filename>`, or alternatively you can add **all** of your edited files by `git add *`.
+		Indivudually add files by `git add 'path to filename'`, or alternatively you can add **all** of your edited files by `git add *`.
 	</li>
 	<li>Commit your edits: `git commit -m <"brief description of the commit">`.</li>
-	<li>Push your commits to your GitHub Fork: `git push -u origin <branch name here>`</li>
+	<li>Push your commits to your GitHub Fork: `git push -u origin 'branch name here'`</li>
 </ol>
 
 ### Making a Pull Request
