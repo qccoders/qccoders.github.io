@@ -184,12 +184,12 @@ commit. When you push it to your fork you will need to do a force push to overwr
 <ol>
 	<li>Fork the qc-coder repo</li>
 	<li>Clone the new fork to your machine</li>
-	<li>Add the upstream <!-- start-code-block: --> `git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git` <!-- end-code-block -->
-		<ul>Maintain upstream by: <!-- start-code-block: --> `git pull --rebase upstream staging` <!-- end-code-block --></ul>
+	<li>Add the upstream `git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git`
+		<ul>Maintain upstream by: `git pull --rebase upstream staging`
 	</li>
-	<li>Verify you're on <!-- start-code-block: --> `staging branch` <!-- end-code-block --> and create a new branch for editing code</li>
+	<li>Verify you're on ``staging branch`` and create a new branch for editing code</li>
     <li>Push changes to GitHub</li>
-    <li>Submit a pull request to qc-coders <!-- start-code-block: -->`dev branch` <!-- end-code-block --></li>
+    <li>Submit a pull request to qc-coders `dev branch`</li>
     <li>After your PR is merged, delete the branch and then rebase against production</li>
 </ol>
 
