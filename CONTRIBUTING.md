@@ -35,7 +35,7 @@ Cloning is simply putting the code that you previously forked (copied to your ow
 <ol>
 	<li>Open Git Bash Shell and navigate to the location you're going to save this project locally.</li>
 		*Make a note of where this location is as you will use it later.
-	<li>`git clone https://github.com/<yourUsername>/qc-coders.github.io.git`</li>
+	<li>Type or copy: `git clone https://github.com/<yourUsername>/qc-coders.github.io.git`</li>
 	<ul>	
 		<li>Make sure to replace `<yourUsername>` with your GitHub Username</li>
 		<li>This will download the entire qc-coders repo to your projects directory.</li><br/>
@@ -63,7 +63,7 @@ Upstream is a way of keeping the files on your computer updated with any changes
 
 *Didn't I already do this?*<br/>
 
-Remember, a long time ago when you forked the production repo and then cloned it. (Essentially, putting qc-coders into your own GitHub and then making a copy of the code on your computer). Then we setup that upstream so you can get the latest and greatest changes. Well, this is what you will need to do *every* time you wish to keep that code updated. Oh, you thought it was going to do this automatically? Nope! (Guess, you have another project to add to your list to make this happen!) The term used for all of this is called: rebasing. Yes, another terrible name.<br/>
+Remember, a long time ago when you forked the production repo and then cloned it. (Essentially, putting qc-coders into your own GitHub and then making a copy of the code on your computer). Then we setup that upstream so you can get the latest and greatest changes. Well, this is what you will need to do **every** time you wish to keep that code updated. Oh, you thought it was going to do this automatically? Nope! (Guess, you have another project to add to your list to make this happen!) The term used for all of this is called: rebasing. Yes, another terrible name.<br/>
 
 So each time you want to update your code base or (*most importantly*) before making a pull-request, follow these steps below:<br/>
 
@@ -83,7 +83,7 @@ So each time you want to update your code base or (*most importantly*) before ma
 		<br/>
 		<br/>
 		
-		If you are *not* on staging, you can get on the staging branch by typing:**<br/>
+		If you are **not** on staging, you can get on the staging branch by typing:**<br/>
 		`git checkout staging`<br/>
 	</li>
 	<li>Peform the rebase<br/>
