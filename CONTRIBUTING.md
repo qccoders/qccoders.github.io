@@ -185,7 +185,7 @@ commit. When you push it to your fork you will need to do a force push to overwr
 	<li>Fork the qc-coder repo</li>
 	<li>Clone the new fork to your machine</li>
 	<li>Add the upstream `git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git`
-		<ul>Maintain upstream by: ` git pull --rebase upstream staging `</ul>
+		<ul>Maintain upstream by: ```shell git pull --rebase upstream staging ```</ul>
 	</li>
 	<li>Verify you're on ` staging branch ` and create a new branch for editing code</li>
     <li>Push changes to GitHub</li>
