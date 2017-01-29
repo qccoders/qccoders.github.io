@@ -19,8 +19,8 @@ These instructions will install Git on your machine. Git is just a version contr
 	<li>Install Git from [here](https://git-scm.com/downloads)</li>
 	<li>Open Git Bash and navigate to the folder you wish to save the project to.</li>
 	<li>Open up a new browser or tab and go to the qc-coders repo: [Q-C Coders](https://github.com/QC-Coders/qc-coders.github.io)</li>
-	<li>Click on "Fork" button ![fork image](http://hubpress.io/img/fork-icon.png)</li>
-		\*You now have the repo forked under your own GitHub account.
+	<li>Click on the "Fork" button</li>
+		*You now have the repo forked under your own GitHub account.
 	<li>After the repository has been forked, you will be taken to your copy of the Q-C Coders repo at 
 	`<yourUsername>/qc-coders.github.io`</li><br/>
 </ol>
@@ -34,11 +34,8 @@ Cloning is simply putting the code that you previously forked (copied to your ow
 
 <ol>
 	<li>Open Git Bash Shell and navigate to the location you're going to save this project locally.</li>
-		\*Make a note of where this location is as you will use it later.
-	<li>```
-		git clone https://github.com/<yourUsername>/qc-coders.github.io.git
-		```
-	</li>
+		*Make a note of where this location is as you will use it later.
+	<li>`git clone https://github.com/<yourUsername>/qc-coders.github.io.git`</li>
 	<ul>	
 		<li>Make sure to replace `<yourUsername>` with your GitHub Username</li>
 		<li>This will download the entire qc-coders repo to your projects directory.</li><br/>
@@ -54,9 +51,9 @@ Upstream is a way of keeping the files on your computer updated with any changes
 <ol>
 	<li>Using Git Bash navigate to the directory where you previously cloned the new qc-coders directory on your machine.
 	</li>
-		\*Remember when this document said 'Make a note of where this location is'? Yep, that's the location!
+		*Remember when this document said 'Make a note of where this location is'? Yep, that's the location!
 	<li>Add the upstream to the qc-coders production repo:<br/>
-		```git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git```
+		`git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git`
 	</li>
 		
 	<ul>Great! You are almost ready to contrubute to qc-coders!</ul><br/>
@@ -148,21 +145,21 @@ You will now put the code from your local machine back into your local qc-coders
 	<li>Now that your edited files have been committed, you will be prompted to create a pull
     	request on your GitHub Page.
 
-    	<ul>*By default, all pull-requests should be towards the qc-coders main repo, `staging
+    	<ul>By default, all pull-requests should be towards the qc-coders dev repo, `dev
     branch`.</ul>
     </li>
-    <li>Submit a pull-request from your branch to qc-coders `staging branch`.</li>
+    <li>Submit a pull-request from **your** branch to qc-coders `dev branch`.</li>
     <li>The title (also called the subject) of your PR should be descriptive of your
-    changes.<br/>
+    changes.<br/><br/>
     In the body of your pull-request include a more detailed summary of the changes you
-    made.
+    made.<br/>
 
-    -   If the pull-request is meant to fix an existing bug/issue, then, at the end of
+    	<ul>If the pull-request is meant to fix an existing bug/issue, then, at the end of
         your PR's description, append the keyword `closes` and #xxxx (where xxxx
         is the issue number). Example: `closes #10`. This tells GitHub to
-        close the existing issue, if the PR is merged.
+        close the existing issue, if the PR is merged.</ul>
     </li>
-    <li>Once your PR is accepted, you may delete the branch you created to submit it.
+    <li>Once your PR is **accepted**, you may delete the branch you created to submit it.
 	This keeps your working fork clean.
 
 	You can do this with a press of a button on the GitHub PR interface. And also, you can
@@ -177,7 +174,7 @@ You will now put the code from your local machine back into your local qc-coders
 
 If you still have a local copy of the branch you, you can make the requested changes and amend your commit with:
 <br/> 
-`git commit --amend` 
+`git commit --amend -m <"brief description of the ammend">` 
 <br/>
 This will update your existing
 commit. When you push it to your fork you will need to do a force push to overwrite your old commit:<br/> 
@@ -187,12 +184,12 @@ commit. When you push it to your fork you will need to do a force push to overwr
 <ol>
 	<li>Fork the qc-coder repo</li>
 	<li>Clone the new fork to your machine</li>
-	<li>Add the upstream ```git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git```
+	<li>Add the upstream `git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git`
 		<ul>Maintain upstream by: `git pull --rebase upstream staging`</ul>
 	</li>
 	<li>Verify you're on `staging branch` and create a new branch for editing code</li>
     <li>Push changes to GitHub</li>
-    <li>Submit a pull request</li>
+    <li>Submit a pull request to qc-coders `dev branch`</li>
     <li>After your PR is merged, delete the branch and then rebase against production</li>
 </ol>
 
