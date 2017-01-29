@@ -174,7 +174,7 @@ You will now put the code from your local machine back into your local qc-coders
 
 If you still have a local copy of the branch you, you can make the requested changes and amend your commit with:
 <br/> 
-`git commit --amend -m <"brief description of the ammend">` 
+`git commit --amend -m <"brief description of the ammend">`  
 <br/>
 This will update your existing
 commit. When you push it to your fork you will need to do a force push to overwrite your old commit:<br/> 
