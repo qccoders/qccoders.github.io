@@ -29,7 +29,8 @@ These instructions will install Git on your machine. Git is just a version contr
     -   You now have the repo forked under your own GitHub account.
 
 5. After the repository has been forked, you will be taken to your copy of
-     the Q-C Coders repo at `your_Username_Here/qc-coders.github.io`
+     the Q-C Coders repo at 
+        `your_Username_Here/qc-coders.github.io`
     -  Make sure to replace `your_Username_Here` with your GitHub username
 
 
