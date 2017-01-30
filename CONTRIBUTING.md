@@ -43,7 +43,7 @@ Cloning is simply putting the code that you previously forked (copied to your ow
 1. Open Git Bash Shell and navigate to the location you're going to save this project locally.
     -   Make a note of where this location is as you will use it later.
 
-2. Type or copy: `git clone https://github.com/your_Username_Here/qc-coders.github.io.git'`
+2. Type or copy: `git clone https://github.com/your_Username_Here/qc-coders.github.io.git`
 	-   This will download the entire qc-coders repo to your projects directory.
 
 
@@ -55,7 +55,7 @@ Upstream is a way of keeping the files on your computer updated with any changes
 
 
 1. Using Git Bash navigate to the directory where you previously cloned the new qc-coders directory on your machine.
-    -   Remember when this document said 'Make a note of where this location is'? Yep, that's the location!
+    -   Remember when this document said "Make a note of where this location is"? Yep, that's the location!
 
 2. Add the upstream to the qc-coders production repo:
 	`git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git`
@@ -79,9 +79,12 @@ So each time you want to update your code base or (*most importantly*) before ma
 
 	-  Type in Git Bash: `git status`
 
-		The Git Bash console should read:
-        > On branch staging
-		> Your branch is up-to-date with origin/staging
+	The Git Bash console should read:
+
+    ```shell    
+    > On branch staging
+	> Your branch is up-to-date with origin/staging
+    ```
 
 	-  If you are **not** on staging, you can get on the staging branch by typing: `git checkout staging`
 
@@ -101,9 +104,9 @@ A changes branch is a way of making changes without affecting your `staging bran
 	Type in Git Bash: `git status`
 
 	The Git Bash console should read:
-    
-    ```    
-        > On branch staging`
+
+    ```shell   
+        > On branch staging
 		> Your branch is up-to-date with origin/staging
     ```
 
@@ -150,7 +153,7 @@ You will now put the code from your local machine back into your local qc-coders
 
 	-  You can do this with a press of a button on the GitHub PR interface. And also, you can delete the local copy of the branch with: `git branch -D branch/to-delete-name`
 	
-5. After deleting the branch, make sure you rebase against the production code to keep your `staging branch` up to date: `git pull --rebase upstream staging`
+5. After deleting the branch, make sure you make a pull against the production code to keep your local files up to date: `git pull`
 
 
 ### Rejected Pull-Request
