@@ -17,14 +17,19 @@ These instructions will install Git on your machine. Git is just a version contr
 
 
     1. Install Git from [here](https://git-scm.com/downloads)
+
         -   If Git is new to you, it's recommended to follow this setup [here](https://youtu.be/J_Clau1bYco)
+
 	2. Open Git Bash and navigate to the folder you wish to save the project to.
+
 	3. Open up a new browser or tab and go to the qc-coders repo: 
         [Q-C Coders](https://github.com/QC-Coders/qc-coders.github.io)
+
 	4. Click on the "Fork" button
         -   You now have the repo forked under your own GitHub account.
-	5. After the repository has been forked, you will be taken to your copy of 
-        the Q-C Coders repo at `your_Username_Here/qc-coders.github.io`
+
+	5. After the repository has been forked, you will be taken to your copy of
+     the Q-C Coders repo at `your_Username_Here/qc-coders.github.io`
         -  Make sure to replace `your_Username_Here` with your GitHub username
 
 
