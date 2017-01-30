@@ -19,10 +19,12 @@ These instructions will install Git on your machine. Git is just a version contr
     1. Install Git from [here](https://git-scm.com/downloads)
         -   If Git is new to you, it's recommended to follow this setup [here](https://youtu.be/J_Clau1bYco)
 	2. Open Git Bash and navigate to the folder you wish to save the project to.
-	3. Open up a new browser or tab and go to the qc-coders repo: [Q-C Coders](https://github.com/QC-Coders/qc-coders.github.io)
+	3. Open up a new browser or tab and go to the qc-coders repo: 
+        [Q-C Coders](https://github.com/QC-Coders/qc-coders.github.io)
 	4. Click on the "Fork" button
         -   You now have the repo forked under your own GitHub account.
-	5. After the repository has been forked, you will be taken to your copy of the Q-C Coders repo at `your_Username_Here/qc-coders.github.io`
+	5. After the repository has been forked, you will be taken to your copy of 
+        the Q-C Coders repo at `your_Username_Here/qc-coders.github.io`
         -  Make sure to replace `your_Username_Here` with your GitHub username
 
 
@@ -46,7 +48,8 @@ Cloning is simply putting the code that you previously forked (copied to your ow
 Upstream is a way of keeping the files on your computer updated with any changes that take place in production. For instance, while you are making changes, someone else make a pull-request that gets merged...Whoa? Wait! Pull-request? Merge? Let's explain these terms. A pull-request is simply someone requesting to push updates, fixes or changes to the production server. A merge takes place when one of us accept the those changes. So, now your computer doesn't have the latest changes, so this is just what upstream does. Every time you use the upstream command (explained later), Git will check to make sure your files are the same as production.
 
 
-	1. Using Git Bash navigate to the directory where you previously cloned the new qc-coders directory on your machine.
+	1. Using Git Bash navigate to the directory where you previously cloned 
+    the new qc-coders directory on your machine.
         -   Remember when this document said 'Make a note of where this location is'? Yep, that's the location!
 	2. Add the upstream to the qc-coders production repo:
 		`git remote add upstream https://github.com/QC-Coders/qc-coders.github.io.git`
@@ -65,7 +68,9 @@ So each time you want to update your code base or (*most importantly*) before ma
 
 	1. Make sure you are on the `staging branch`
 		
-        -   Note: If you have used Git/GitHub before you may have seen the word `master` used. `Master` is for your own projects. When you fork/clone a project, your code will reside on the `staging branch`.
+        -   Note: If you have used Git/GitHub before you may have seen the
+         word `master` used. `Master` is for your own projects. 
+         When you fork/clone a project, your code will reside on the `staging branch`.
 
 		Type in Git Bash:
         `git status`
@@ -111,7 +116,8 @@ A changes branch is a way of making changes without affecting your `staging bran
 		**Note:** Branch naming is important. Use a name like
 	    `fix/short-fix-description` or `feature/short-feature-description`.
 
-    4. Make your changes now and if you ever need to check to see which files have been changed type into Git Bash `git status`
+    4. Make your changes now and if you ever need to check to see which files
+     have been changed type into Git Bash `git status`
 
 
 
@@ -122,7 +128,8 @@ A changes branch is a way of making changes without affecting your `staging bran
 You will now put the code from your local machine back into your local qc-coders repository? Remember way back when you did that fork and it copied the production code from qc-coders to your personal GitHub repository? Yep, that's where your changes will go.
 
 	1. Add your edited files:
-		Indivudually add files by `git add 'path to filename'`, or alternatively you can add **all** of your edited files by `git add *`.
+		Indivudually add files by `git add 'path to filename'`, or alternatively you can add **all**
+         of your edited files by `git add *`.
 	2. Commit your edits: `git commit -m <"brief description of the commit">`.
 	3. Push your commits to your GitHub Fork: `git push -u origin branch_name_here`
 
@@ -139,9 +146,11 @@ You will now put the code from your local machine back into your local qc-coders
 	
         -   This keeps your working fork clean.
 
-	You can do this with a press of a button on the GitHub PR interface. And also, you can delete the local copy of the branch with: `git branch -D branch/to-delete-name`
+	You can do this with a press of a button on the GitHub PR interface.
+     And also, you can delete the local copy of the branch with: `git branch -D branch/to-delete-name`
 	
-	5. After deleting the branch, make sure you rebase against the production code to keep your `staging branch` up to date: `git pull --rebase upstream staging`
+	5. After deleting the branch, make sure you rebase against the production code to keep your `staging branch`
+     up to date: `git pull --rebase upstream staging`
 
 
 ### Rejected Pull-Request
