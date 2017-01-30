@@ -29,8 +29,7 @@ These instructions will install Git on your machine. Git is just a version contr
     -   You now have the repo forked under your own GitHub account.
 
 5. After the repository has been forked, you will be taken to your copy of
-     the Q-C Coders repo at 
-        `your_Username_Here/qc-coders.github.io`
+     the Q-C Coders repo at `your_Username_Here/qc-coders.github.io`
     -  Make sure to replace `your_Username_Here` with your GitHub username
 
 
@@ -44,7 +43,7 @@ Cloning is simply putting the code that you previously forked (copied to your ow
 1. Open Git Bash Shell and navigate to the location you're going to save this project locally.
     -   Make a note of where this location is as you will use it later.
 
-2. Type or copy: `git clone https://github.com/yourUsernameHere/qc-coders.github.io.git'
+2. Type or copy: `git clone https://github.com/your_Username_Here/qc-coders.github.io.git'`
 	-   This will download the entire qc-coders repo to your projects directory.
 
 
@@ -102,8 +101,11 @@ A changes branch is a way of making changes without affecting your `staging bran
 	Type in Git Bash: `git status`
 
 	The Git Bash console should read:
+    
+    ```    
         > On branch staging`
 		> Your branch is up-to-date with origin/staging
+    ```
 
 2. If you are not on staging or your working directory is not clean, type in Git Bash: `git checkout staging`
 
