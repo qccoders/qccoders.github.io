@@ -1,2 +1,2 @@
-# qc-coders.github.io
+# qccoders.github.io
 Q-C Coders Website

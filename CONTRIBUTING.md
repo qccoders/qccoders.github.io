@@ -15,7 +15,6 @@ The details below will get your system setup to start contributing to Q-C Coders
 
 These instructions will install Git on your machine. Git is just a version control program which will allow you to transfer files from your machine to GitHub and vice versa. Once installed, the Git program can be used by opening Git Bash. The next part is to fork (copy) the existing code on GitHub to your personal GitHub account. This allows you to work with the files without making changes to production code.
 
-
 1. Install Git from [here](https://git-scm.com/downloads)
 
     -   If Git is new to you, it's recommended to follow this setup [here](https://youtu.be/J_Clau1bYco)
@@ -95,8 +94,7 @@ Creating a new branch allows you to make changes to code without affecting any o
 	**Note:** Branch naming is important. Use a name like
 	    `fix/short-fix-description` or `feature/short-feature-description`.
 
-4. Make your changes now and if you ever need to check to see which files
-have been changed, type into Git Bash `git status`
+4. Make your changes now and if you ever need to check to see which files have been changed, type into Git Bash `git status`
 
 
 ### Pushing Your Changes to GitHub
@@ -142,16 +140,16 @@ If you still have a local copy of the branch you, you can make the requested cha
 
 This will update your existing commit. When you push it to your fork you will need to do a force push to overwrite your old commit: 
 
-`git push --force`
+`git push`
 
 
 ## Advance Developer Steps
 
 *A great Git cheat sheet can be found [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)*
 
-1. Fork the qc-coder repo</li>
+1. Fork the qc-coder repo
 	
-2. Clone the new fork to your machine</li>
+2. Clone the new fork to your machine
 	
 3. Add the upstream `git remote add upstream https://github.com/qccoders/qccoders.github.io.git`
     -   Maintain upstream by: `git fetch upstream`
