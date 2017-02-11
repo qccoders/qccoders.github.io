@@ -158,7 +158,7 @@ This will update your existing commit. When you push it to your fork you will ne
 `git push`
 
 
-## Advance Developer Steps
+## Advanced Developer Steps
 
 *A great Git cheat sheet can be found [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)*
 
@@ -192,4 +192,4 @@ This will update your existing commit. When you push it to your fork you will ne
     - You verify by `git status`
 
 
-4.  Now do a merge by: `git merge upstream dev`
+4.  Now do a merge by: `git merge upstream/dev`
