@@ -28,22 +28,20 @@ These instructions will install Git on your machine. Git is just a version contr
 1. If you don't have Homebrew installed then it's time to make life easier.
     - Type the following into a terminal: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-3. Open up a new browser or tab and go to the qccoders.github.io repo:
+2. Next type: `brew install git`
+
+###Cloning the repository
+1. Open up a new browser or tab and go to the qccoders.github.io repo:
     [Q-C Coders](https://github.com/qccoders/qccoders.github.io)
 
-4. Click on the "Fork" button
+2. Click on the "Fork" button
     -   This button is located in the top-right just underneath your picture.
     -   You now have the repository forked under your own GitHub account!
 
-5. After the repository (aka: repo) has been forked, you will be taken to your copy of the Q-C Coders repo at `your_Username_Here/qccoders.github.io`
-    -  Make sure to replace `your_Username_Here` with your GitHub username
+3. After the repository (aka: repo) has been forked, you will be taken to your copy of the Q-C Coders repo at `<your_Username_Here>/qccoders.github.io`
+    -  Make sure to replace `<your_Username_Here>` with your GitHub username
 
-
-### Cloning
-
-*What are these cloning instructions doing?*
-
-Cloning is simply putting the code that you previously forked (copied to your own GitHub repo) onto your local machine.
+#Cloning is simply putting the code that you previously forked (copied to your own GitHub repo) onto your local machine.
 
 
 1. Open Git Bash Shell and navigate to the location you're going to save this project locally.
