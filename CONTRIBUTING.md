@@ -17,14 +17,14 @@ The details below will get your system setup to start contributing to Q-C Coders
 
 These instructions will install Git on your machine. Git is just a version control program which will allow you to transfer files from your machine to GitHub and vice versa. Once installed, the Git program can be used by opening Git Bash. The next part is to fork (copy) the existing code on GitHub to your personal GitHub account. This allows you to work with the files without making changes to production code.
 
-##Windows instructions
+###Windows instructions
 1. Install Git from [here](https://git-scm.com/downloads)
 
     -   If Git is new to you, it's recommended to follow this setup [here](https://youtu.be/J_Clau1bYco)
 
 2. Open Git Bash and navigate to the folder (aka: directory) you wish to save the project to.
 
-##OS X instructions
+###OS X instructions
 1. If you don't have Homebrew installed then it's time to make life easier.
     - Type the following into a terminal: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
@@ -41,8 +41,7 @@ These instructions will install Git on your machine. Git is just a version contr
 3. After the repository (aka: repo) has been forked, you will be taken to your copy of the Q-C Coders repo at `<your_Username_Here>/qccoders.github.io`
     -  Make sure to replace `<your_Username_Here>` with your GitHub username
 
-#Cloning is simply putting the code that you previously forked (copied to your own GitHub repo) onto your local machine.
-
+###Cloning is simply putting the code that you previously forked (copied to your own GitHub repo) onto your local machine.
 
 1. Open Git Bash Shell and navigate to the location you're going to save this project locally.
     -   If you are new to the Git Bash Shell, you can learn the basics [here](https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/command-line-101)
