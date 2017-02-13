@@ -7,6 +7,8 @@ The details below will get your system setup to start contributing to Q-C Coders
 
 #### *Advanced coder setup or TL;DR click [Advance Developer Steps](#advance-developer-steps)* 
 
+###### Is your branches out of date or having other issues? *See the FAQ* [Here](#faq)
+
 ## Junior Coders Start Here:
 
 ### Setup
@@ -60,7 +62,7 @@ Upstream is a way of keeping the files on your computer updated with any changes
 1. Using Git Bash navigate to the directory where you previously cloned the new qccoders.github.io directory on your machine.
     -   Remember when this document said *"Make a note of where this location is"*? Yep, that's the location!
 
-2. Add the upstream to the qccoders.github.io `master branch` repository:
+2. Add the upstream to the qccoders.github.io master branch repository:
 	`git remote add upstream https://github.com/qccoders/qccoders.github.io.git`
     -   You can easily check which upsreams you have by: `git remote -v`
     -   Great! You are almost ready to contrubute to Q-C Coders!
@@ -72,9 +74,9 @@ Upstream is a way of keeping the files on your computer updated with any changes
 
 *What's with all these branches?*
 
-Creating a new branch allows you to make changes to code without affecting any of your original branches. This allows the `master branch` and `dev branch` free of any changes. You want to keep these branches an exact replica of what is on production. The `dev branch` will be merged into the `master branch` every so often. So, you will create another branch for each feature/fix/update etc.
+Creating a new branch allows you to make changes to code without affecting any of your original branches. This allows the master branch and dev branch free of any changes. You want to keep these branches an exact replica of what is on production. The dev branch will be merged into the master branch every so often. So, you will create another branch for each feature/fix/update etc.
 
-1. Make sure you're on the `dev branch`:
+1. Make sure you're on the dev branch:
 	Type in Git Bash: `git status`
 
 	The Git Bash console should read:
@@ -85,16 +87,18 @@ Creating a new branch allows you to make changes to code without affecting any o
         > nothing to commit, working tree clean
     ```
 
-2. If you are not on `dev branch` or your working directory is not clean, type in Git Bash: `git checkout -b dev origin/dev`
+2. If you are not on dev branch or your working directory is not clean, type in Git Bash: `git checkout -b dev origin/dev`
     -   You can then run `git status` again and should see the above.
 
-3. You can now create a branch off of the `dev branch`:
+3. You can now create a branch off of the dev branch:
     `git checkout -b branch/name-here`
 
 	**Note:** Branch naming is important. Use a name like
 	    `fix/short-fix-description` or `feature/short-feature-description`.
 
-4. Make your changes now and if you ever need to check to see which files have been changed, type into Git Bash `git status`
+4. Make your changes now and if you ever need to check to see which files have been changed, type into Git Bash: 
+
+    `git status`
 
 
 ### Pushing Your Changes to GitHub
@@ -103,18 +107,28 @@ Creating a new branch allows you to make changes to code without affecting any o
 
 You will now put the code from your local machine back into your local qccoders.github.io repository. Remember way back when you did that fork and it copied the production code from qccoders.github.io to your personal GitHub repository? Yep, that's where these changes will go. Then, in the next section you will make the pull-request.
 
-1. Add your edited files:
-	Add all of the files by `git add *`, or alternatively you can add files individually by `git add 'path_to_filename'`.
-
-2. Commit your edits: `git commit -m <"brief description of the commit">`.
+1. Add your edited files
 	
-3. Push your commits to your GitHub Fork: `git push -u origin branch_name_here`
+    Add all of the files by: `git add *`
+
+    -   Or alternatively you can add files individually by: `git add 'path_to_filename'`
+
+
+2. Commit your edits: 
+
+    `git commit -m <"brief description of the commit">`.
+	
+3. Push your commits to your GitHub Fork: 
+
+    `git push -u origin branch_name_here`
 
 
 ### Making a Pull Request
 
+*Do a `git fetch upstream` first before the steps below! This will ensure you dont create conflicts!*
+
 1. Now that your edited files have been committed, you will want to create a pull request on your GitHub Page.
-    -  By default, all pull-requests should be towards the qccoders.github.io dev repo, `dev branch`.
+    -  By default, all pull-requests should be towards the qccoders.github.io dev repo, dev branch.
     
 2. Submit a pull-request (aka: PR) from **your** branch to Q-C Coders `dev branch`.
     
@@ -122,12 +136,13 @@ You will now put the code from your local machine back into your local qccoders.
     -   In the body of your pull-request include a more detailed summary of the changes you made.
 	-  If the pull-request is meant to fix an existing bug/issue, then, at the end of your PR's description, append the keyword `closes` and #xxxx (where xxxx is the issue number). Example: `closes #10`. This tells GitHub to close the existing issue, if the PR is merged.
     
-4. Once your PR is **accepted**, you may delete the branch you created to submit it.
-	-   This keeps your working fork clean.
+#### When the Pull-Request is Accepted
 
-	-  You can do this with a press of a button on the GitHub PR interface under Branches. And also, you can delete the local copy of the branch with: `git branch -d branch/to-delete-name`
-	
-5. After deleting the branch, make sure you make a pull against the production code to keep your local files up to date: `git pull`
+1. Delete the branch on your GitHub profile by going to your qccoders repository and clicking on "branches". Next to the branch click the trash can icon. 
+
+2. After deleting the branch, make sure you make a pull against the production code to keep your local files up to date: 
+
+    `git pull`
 
 
 ### Rejected Pull-Request
@@ -143,16 +158,17 @@ This will update your existing commit. When you push it to your fork you will ne
 `git push`
 
 
-## Advance Developer Steps
+## Advanced Developer Steps
 
 *A great Git cheat sheet can be found [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)*
 
-1. Fork the qc-coder repo
+1. Fork the qccoders.github.io repo
 	
 2. Clone the new fork to your machine
 	
 3. Add the upstream `git remote add upstream https://github.com/qccoders/qccoders.github.io.git`
     -   Maintain upstream by: `git fetch upstream`
+
 
 4. Verify you're on `dev branch` and create a **new branch** for editing code
     
@@ -161,3 +177,19 @@ This will update your existing commit. When you push it to your fork you will ne
 6. Submit a pull request to Q-C Coders `dev branch`
     
 7. After your PR is merged, delete the branch and then `git pull` against production
+
+## Frequenty Asked Questions (FAQ)
+-------
+
+###### Branches are out of date on my fork in GitHub
+
+1. Open Git Bash where you project is located
+
+2. Do a fetch on the upstream `git fetch upstream`
+    - Now you have everything from the qccoders production branches (both master and dev)
+
+3. Check out your local dev branch: `git checkout dev`
+    - You verify by `git status`
+
+
+4.  Now do a merge by: `git merge upstream/dev`
