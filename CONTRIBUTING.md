@@ -5,7 +5,7 @@
 
 The details below will get your system setup to start contributing to Q-C Coders.
 
-#### *Advanced coder setup or TL;DR click [Advance Developer Steps](#advance-developer-steps)* 
+#### *Advanced coder setup or TL;DR click [Advance Developer Steps](#advance-developer-steps)*
 
 ###### Is your branches out of date or having other issues? *See the FAQ* [Here](#faq)
 
@@ -17,29 +17,31 @@ The details below will get your system setup to start contributing to Q-C Coders
 
 These instructions will install Git on your machine. Git is just a version control program which will allow you to transfer files from your machine to GitHub and vice versa. Once installed, the Git program can be used by opening Git Bash. The next part is to fork (copy) the existing code on GitHub to your personal GitHub account. This allows you to work with the files without making changes to production code.
 
+###Windows instructions
 1. Install Git from [here](https://git-scm.com/downloads)
 
     -   If Git is new to you, it's recommended to follow this setup [here](https://youtu.be/J_Clau1bYco)
 
 2. Open Git Bash and navigate to the folder (aka: directory) you wish to save the project to.
 
-3. Open up a new browser or tab and go to the qccoders.github.io repo: 
+###OS X instructions
+1. If you don't have Homebrew installed then it's time to make life easier.
+    - Type the following into a terminal: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+2. Next type: `brew install git`
+
+###Cloning the repository
+1. Open up a new browser or tab and go to the qccoders.github.io repo:
     [Q-C Coders](https://github.com/qccoders/qccoders.github.io)
 
-4. Click on the "Fork" button
+2. Click on the "Fork" button
     -   This button is located in the top-right just underneath your picture.
     -   You now have the repository forked under your own GitHub account!
 
-5. After the repository (aka: repo) has been forked, you will be taken to your copy of the Q-C Coders repo at `your_Username_Here/qccoders.github.io`
-    -  Make sure to replace `your_Username_Here` with your GitHub username
+3. After the repository (aka: repo) has been forked, you will be taken to your copy of the Q-C Coders repo at `<your_Username_Here>/qccoders.github.io`
+    -  Make sure to replace `<your_Username_Here>` with your GitHub username
 
-
-### Cloning
-
-*What are these cloning instructions doing?*
-
-Cloning is simply putting the code that you previously forked (copied to your own GitHub repo) onto your local machine. 
-
+###Cloning is simply putting the code that you previously forked (copied to your own GitHub repo) onto your local machine.
 
 1. Open Git Bash Shell and navigate to the location you're going to save this project locally.
     -   If you are new to the Git Bash Shell, you can learn the basics [here](https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/command-line-101)
@@ -96,7 +98,7 @@ Creating a new branch allows you to make changes to code without affecting any o
 	**Note:** Branch naming is important. Use a name like
 	    `fix/short-fix-description` or `feature/short-feature-description`.
 
-4. Make your changes now and if you ever need to check to see which files have been changed, type into Git Bash: 
+4. Make your changes now and if you ever need to check to see which files have been changed, type into Git Bash:
 
     `git status`
 
@@ -108,17 +110,17 @@ Creating a new branch allows you to make changes to code without affecting any o
 You will now put the code from your local machine back into your local qccoders.github.io repository. Remember way back when you did that fork and it copied the production code from qccoders.github.io to your personal GitHub repository? Yep, that's where these changes will go. Then, in the next section you will make the pull-request.
 
 1. Add your edited files
-	
+
     Add all of the files by: `git add *`
 
     -   Or alternatively you can add files individually by: `git add 'path_to_filename'`
 
 
-2. Commit your edits: 
+2. Commit your edits:
 
     `git commit -m <"brief description of the commit">`.
-	
-3. Push your commits to your GitHub Fork: 
+
+3. Push your commits to your GitHub Fork:
 
     `git push -u origin branch_name_here`
 
@@ -129,18 +131,18 @@ You will now put the code from your local machine back into your local qccoders.
 
 1. Now that your edited files have been committed, you will want to create a pull request on your GitHub Page.
     -  By default, all pull-requests should be towards the qccoders.github.io dev repo, dev branch.
-    
+
 2. Submit a pull-request (aka: PR) from **your** branch to Q-C Coders `dev branch`.
-    
+
 3. The title (also called the subject) of your PR should be descriptive of your changes.
     -   In the body of your pull-request include a more detailed summary of the changes you made.
 	-  If the pull-request is meant to fix an existing bug/issue, then, at the end of your PR's description, append the keyword `closes` and #xxxx (where xxxx is the issue number). Example: `closes #10`. This tells GitHub to close the existing issue, if the PR is merged.
-    
+
 #### When the Pull-Request is Accepted
 
-1. Delete the branch on your GitHub profile by going to your qccoders repository and clicking on "branches". Next to the branch click the trash can icon. 
+1. Delete the branch on your GitHub profile by going to your qccoders repository and clicking on "branches". Next to the branch click the trash can icon.
 
-2. After deleting the branch, make sure you make a pull against the production code to keep your local files up to date: 
+2. After deleting the branch, make sure you make a pull against the production code to keep your local files up to date:
 
     `git pull`
 
@@ -153,7 +155,7 @@ If you still have a local copy of the branch you, you can make the requested cha
 
 `git commit --amend -m <"brief description of the ammend">`  
 
-This will update your existing commit. When you push it to your fork you will need to do a force push to overwrite your old commit: 
+This will update your existing commit. When you push it to your fork you will need to do a force push to overwrite your old commit:
 
 `git push`
 
@@ -163,19 +165,19 @@ This will update your existing commit. When you push it to your fork you will ne
 *A great Git cheat sheet can be found [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)*
 
 1. Fork the qccoders.github.io repo
-	
+
 2. Clone the new fork to your machine
-	
+
 3. Add the upstream `git remote add upstream https://github.com/qccoders/qccoders.github.io.git`
     -   Maintain upstream by: `git fetch upstream`
 
 
 4. Verify you're on `dev branch` and create a **new branch** for editing code
-    
+
 5. Push changes to GitHub
-  
+
 6. Submit a pull request to Q-C Coders `dev branch`
-    
+
 7. After your PR is merged, delete the branch and then `git pull` against production
 
 ## Frequenty Asked Questions (FAQ)
