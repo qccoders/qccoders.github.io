@@ -1,0 +1,16 @@
+.thumbnailBorder {
+	border:2px solid lightgrey;
+    outline-color: lightgrey;  
+    outline-style: solid;
+}
+
+.flex_wrapper {
+	display: -webkit-flex;
+   	display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
