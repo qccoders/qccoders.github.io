@@ -13,4 +13,17 @@
     align-items: stretch;
     -webkit-justify-content: center;
     justify-content: center;
+    width: 100%
+}
+
+.contactContainer {
+	display: -webkit-flex;
+   	display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    justify-content: center;
+	background-color: #777;
 }
