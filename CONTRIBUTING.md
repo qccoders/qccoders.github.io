@@ -194,4 +194,6 @@ This will update your existing commit. When you push it to your fork you will ne
     - You verify by `git status`
 
 
-4.  Now do a merge by: `git merge upstream/dev`
+4. Now do a merge by: `git merge upstream/dev`
+
+5. And now push with: `git push`  
